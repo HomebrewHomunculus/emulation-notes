@@ -5,9 +5,9 @@ Notes and useful resources on developing emulators, TAS, etc.
 ## NES
 
 
-#### Tetris
+### Tetris
 
-Emulator optionss include:
+Emulator options include:
 
 * [Mesen2](https://github.com/SourMesen/Mesen2)
     - C++17 backend
@@ -41,5 +41,5 @@ Technical information - RAM maps etc.:
 - [Data Crystal - Known Dumps](https://datacrystal.romhacking.net/wiki/Tetris_(NES)#Known_Dumps)
 
 
+<!-- # -->
 
-# . #

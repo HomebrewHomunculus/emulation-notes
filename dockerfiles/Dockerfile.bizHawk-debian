@@ -1,4 +1,4 @@
-FROM debian:stable-20231218
+FROM debian:stable-20231218 AS bizhawk-build-debian
 
 # The Debian image is a bit more heavy than Alpine, but less than Ubuntu.
 # It's about 50 MB; Ubuntu is around 145 MB.
@@ -63,5 +63,9 @@ RUN bash ./Dist/BuildRelease.sh
 
 # Then we might try to run the emulator.
 # Debian doesn't seem to come with ps?
-#RUN apt-get install procps -y
+RUN apt-get install procps -y
+
+# Install lua to run scripts
+RUN apt-get install liblua5.4 -y
+
 #RUN bash ./output/EmuHawkMono.sh --mono-no-redirect
